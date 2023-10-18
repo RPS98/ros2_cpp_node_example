@@ -1,5 +1,5 @@
 /*!*******************************************************************************************
- *  \file       cpp_template_benchmark.cpp
+ *  \file       ros2_cpp_template_benchmark.cpp
  *  \brief      Class benchmark
  *  \authors    Rafael Pérez Seguí
  *
@@ -34,14 +34,14 @@
 #include <benchmark/benchmark.h>
 #include <exception>
 #include <memory>
-#include "cpp_template/cpp_template.hpp"
+#include "ros2_cpp_template/ros2_cpp_template.hpp"
 
 static void BM_TEST_INIT(benchmark::State &state) {
   // Perform setup here
   for (auto _ : state) {
     // This code gets timed
-    std::shared_ptr<cpp_template::CppTemplate> cpp_template =
-        std::make_shared<cpp_template::CppTemplate>();
+    std::shared_ptr<ros2_cpp_template::Ros2CppTemplate> ros2_cpp_template =
+        std::make_shared<ros2_cpp_template::Ros2CppTemplate>();
   }
 }
 BENCHMARK(BM_TEST_INIT)->Threads(1)->Repetitions(10);

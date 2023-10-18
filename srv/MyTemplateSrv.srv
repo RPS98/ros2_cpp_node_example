@@ -1,0 +1,8 @@
+# SERVICE TYPE: MyTemplateSrv
+# ------------------------------------------------------------------------------
+# This service send a template message
+
+bool input  # Service input
+---
+bool output # Service output
+# ------------------------------------------------------------------------------

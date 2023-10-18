@@ -1,5 +1,5 @@
 /*!*******************************************************************************************
- *  \file       cpp_template_gtest.cpp
+ *  \file       ros2_cpp_template_gtest.cpp
  *  \brief      Class gtest
  *  \authors    Rafael Pérez Seguí
  *
@@ -33,11 +33,11 @@
 
 #include <gtest/gtest.h>
 #include <memory>
-#include "cpp_template/cpp_template.hpp"
+#include "ros2_cpp_template/ros2_cpp_template.hpp"
 
-TEST(cpp_template, test_cpp_template) {
-  EXPECT_NO_THROW(std::shared_ptr<cpp_template::CppTemplate> cpp_template =
-                      std::make_shared<cpp_template::CppTemplate>());
+TEST(ros2_cpp_template, test_ros2_cpp_template) {
+  EXPECT_NO_THROW(std::shared_ptr<ros2_cpp_template::Ros2CppTemplate> ros2_cpp_template =
+                      std::make_shared<ros2_cpp_template::Ros2CppTemplate>());
 }
 
 int main(int argc, char *argv[]) {

@@ -1,0 +1,7 @@
+/**:
+  ros__parameters:
+    timer_freq: 0.5  # Hz of platform commands send
+    topic_pub: "my_topic_sub"
+    topic_sub: "my_topic_pub"
+    service_name: "my_service_client"
+    service_client: "my_service_server"

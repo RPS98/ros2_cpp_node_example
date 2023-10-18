@@ -1,6 +1,6 @@
 /*!*******************************************************************************************
- *  \file       cpp_template.hpp
- *  \brief      Class definition
+ *  \file       ros2_cpp_template_main.cpp
+ *  \brief      Class executable
  *  \authors    Rafael Pérez Seguí
  *
  *  \copyright  Copyright (c) 2022 Universidad Politécnica de Madrid
@@ -31,15 +31,11 @@
  * EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  ********************************************************************************/
 
-#ifndef CPP_TEMPLATE_HPP
-#define CPP_TEMPLATE_HPP
+#include <ros2_cpp_template/ros2_cpp_template.hpp>
 
-namespace cpp_template {
-class CppTemplate {
-public:
-  CppTemplate();
-  ~CppTemplate();
-};
-}  // namespace cpp_template
-
-#endif  // CPP_TEMPLATE_HPP
+int main(int argc, char* argv[]) {
+  rclcpp::init(argc, argv);
+  rclcpp::spin(std::make_shared<ros2_cpp_template::Ros2CppTemplate>());
+  rclcpp::shutdown();
+  return 0;
+}

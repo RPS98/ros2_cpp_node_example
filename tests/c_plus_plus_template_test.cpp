@@ -1,5 +1,5 @@
 /*!*******************************************************************************************
- *  \file       cpp_template_test.cpp
+ *  \file       ros2_cpp_template_test.cpp
  *  \brief      Class test
  *  \authors    Rafael Pérez Seguí
  *
@@ -32,14 +32,14 @@
  ********************************************************************************/
 
 #include <memory>
-#include "cpp_template/cpp_template.hpp"
+#include "ros2_cpp_template/ros2_cpp_template.hpp"
 
-void test_cpp_template() {
-  std::shared_ptr<cpp_template::CppTemplate> cpp_template =
-      std::make_shared<cpp_template::CppTemplate>();
+void test_ros2_cpp_template() {
+  std::shared_ptr<ros2_cpp_template::Ros2CppTemplate> ros2_cpp_template =
+      std::make_shared<ros2_cpp_template::Ros2CppTemplate>();
 }
 
 int main(int argc, char* argv[]) {
-  test_cpp_template();
+  test_ros2_cpp_template();
   return 0;
 }
